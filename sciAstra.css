@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --accent-color: black;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    background: rgb(35, 219, 164);
+    background: linear-gradient(81deg, blue 0%, indigo 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--primary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration-line: underline;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* utility classes */
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-links {
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+
+.hover-links:hover {
+    background: rgb(35, 219, 164);
+    background: linear-gradient(81deg, blue 0%, indigo 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.primary-button {
+    border: 0.3px solid var(--primary-text-color);
+    border-radius: 50px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--primary-text-color);
+    transition: 0.2s ease-out;
+    background: linear-gradient(90deg, rgba(83, 0, 255, 1) 0%, rgba(231, 172, 204, 1) 100%);
+}
+
+.primary-button:hover {
+    color: black;
+
+}
+
+.secondary-button {
+    border: 0.5px solid indigo;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    background-color: rgb(38, 134, 213);
+    text-decoration: none;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    columns: var(--accent-color) !important;
+}
+
+/* nav bar */
+.main-nav {
+    margin: 20px;
+    background-attachment: fixed;
+
+}
+
+.nav-links {
+    color: black;
+    width: 100%;
+
+
+}
+
+.nav-links ul {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    justify-content: space-between;
+
+
+}
+
+/* header- section */
+.header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.university-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.university-header {
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.uni1 {
+    width: 23%;
+    position: relative;
+    min-height: 200px;
+    min-width: 300px;
+    background: black;
+    background: url(./cambridge.jpeg);
+    transition: 0.2s ease-out;
+}
+
+uni1:hover {
+    box-shadow: 0 0 10px #888;
+}
+
+.university {
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    column-count: auto;
+    color: black;
+}
+
+/* mentors sections */
+.mentors-header {
+    text-align: center;
+}
+
+.mentors-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.mentors-header h1 {
+    margin-bottom: 80px;
+}
+
+.mentors-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.mentor-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.company-logo {
+    border-radius: 50%;
+    width: 100px;
+}
+.section-3 .figure {
+  background-color: #1d1d1d;
+  color: #efefef;
+  position: relative;
+  width: 320px;
+}
+
+.section-3 .figure img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.section-3 .figure figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+  background-image: linear-gradient(bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  padding: 0 0px 10px 15px;
+}
+
+.section-3 .figure h3 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 3px 0;
+}
+
+.section-3 .figure .title1,
+.section-3 .figure .title3 {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.section-3 .figure .title2 {
+  color: #a58e7c;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-3 .figure a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:80px;
+}
